@@ -1,9 +1,10 @@
+import { Container } from "../styles/square.styled";
 function Square(props) {
     return (
-    <div className="Square">
-        <h4>{props.name}</h4>
-        <h2>{props.number}</h2>-
-    </div>
+   <Container>
+        <h4>Informacao</h4>
+        <h2>42</h2>
+    </Container>
     );
 }
 

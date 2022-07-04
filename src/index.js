@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Sidebar from './components/Sidebar';
 import Login from './pages/Login';
 import Home from './pages/Home';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Usuarios from './pages/Usuarios';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -17,6 +17,7 @@ root.render(
       <Routes>
         <Route path='/Home' element={<Home />}></Route>
         <Route path='/Login' element={<Login />}></Route>
+        <Route path='/Usuarios' element={<Usuarios />}></Route>
 
       </Routes>
     </div>

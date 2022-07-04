@@ -1,0 +1,20 @@
+.Home{
+    background: #F7F8FC;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    height: 134px;
+    width: 70%;
+    left: 383px;
+    top: 128px;
+    border-radius: 0px;
+    margin-top: 7rem;
+    justify-content: space-around;
+    position: absolute;
+}
