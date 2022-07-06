@@ -13,6 +13,7 @@ function Sidebar() {
             <SidebarContent link="https://placekitten.com/15/15" text="Usuarios"/>
             <SidebarContent link={gear} text="Configuracoes"/>
             <SidebarContent link="https://placekitten.com/15/15" text="Creditos"/>
+            <SidebarContent link="https://placekitten.com/15/15" text="Teste"/>
 
 
     </Container>

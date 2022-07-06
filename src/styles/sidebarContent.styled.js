@@ -33,5 +33,20 @@ p{
     display: contents;
     font-size: 19px;
 }
+a{
+    /* Regular/16px */
+
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 20px;
+    Margin-top: -1rem;
+    text-align: center;
+    letter-spacing: 0.3px;
+    color: #9FA2B4;
+    display: contents;
+
+}
 
 `

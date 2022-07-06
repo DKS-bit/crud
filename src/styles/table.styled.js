@@ -15,33 +15,25 @@ justify-content: space-around;
 position: absolute;
 margin-right: 3rem;
 /* grayscale / white */
-
 background: #FFFFFF;
 /* grayscale / divider */
-
 border: 1px solid #DFE0EB;
 border-radius: 8px;
-
 h4{
     /* Bold/19px */
-
 font-family: 'Mulish';
 font-style: normal;
 font-weight: 700;
 font-size: 19px;
 line-height: 24px;
 /* identical to box height */
-
 text-align: center;
 letter-spacing: 0.4px;
-
 /* grayscale / gray */
-
 color: #9FA2B4;
 }
 h2{
     /* Bold/40px */
-
 font-family: 'Mulish';
 font-style: normal;
 font-weight: 700;
@@ -49,9 +41,34 @@ font-size: 40px;
 line-height: 50px;
 text-align: center;
 letter-spacing: 1px;
-
 /* grayscale / black */
-
 color: #252733;
 }
+table { 
+    width: 100%; 
+    border-collapse: collapse; 
+  }
+  /* Zebra striping */
+  tr:nth-of-type(odd) { 
+    background: #eee; 
+  }
+  th { 
+    background: #363740; 
+    color: white; 
+    font-weight: bold; 
+  }
+  td, th { 
+    padding: 6px; 
+    text-align: center; 
+  }
+  td > div {
+    display: inline-block;
+  }
+  img{
+    margin-top: 0;
+  }
+  .acoes{
+    width: 33px; 
+    height: 33px; 
+  }
 `
