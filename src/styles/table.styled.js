@@ -5,10 +5,9 @@ display: flex;
 flex-direction: row;
 flex-wrap: wrap;
 align-content: center;
-height: 134px;
-width: 70%;
-left: 300px;
-top: 128px;
+width: 1400px; 
+left: 340px;
+top: -16px;
 border-radius: 0px;
 margin-top: 7rem;
 justify-content: space-around;
@@ -45,7 +44,7 @@ letter-spacing: 1px;
 color: #252733;
 }
 table { 
-    width: 100%; 
+    width: 1400px; 
     border-collapse: collapse; 
   }
   /* Zebra striping */
@@ -70,5 +69,33 @@ table {
   .acoes{
     width: 33px; 
     height: 33px; 
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  span{
+    font-size: 17px;
+    padding: 1rem;
+    position: relative;
+    left: 555px;
+  }
+  span:hover{
+    cursor:pointer;
+    font-size:23px;
   }
 `

@@ -4,9 +4,8 @@ import {Link} from "react-router-dom";
 function SidebarContent(props) {
     return (
     <Container>
-        <img src= {props.link}/>
 
-        <Link to={{ pathname: "/Home"}}>{props.text}</Link>
+        <Link to={{ pathname: props.link}}>{props.text}</Link>
     </Container>
     );
 }

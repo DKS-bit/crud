@@ -1,3 +1,7 @@
+@keyframes example {
+  from {  transform: rotate(0deg);}
+  to {  transform: rotate(360deg);}
+}
 body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -20,6 +24,28 @@ body {
     width: 100%;
     height: 100vh;
   }
+  .invisible {
+    display: none;
+    animation-name: example;
+    animation-duration: 4s;
+    
+  }
+  .display {
+    animation-name: example;
+    animation-duration: 0.5s;
+    
+  }
+  .dispay {
+    animation-name: example;
+    animation-duration: 0.5s;
+    
+  }
+  
+
+  .Login{
+    animation-name: example;
+    /* animation-duration: 4s; */
+  }
   section{
     height: 540px;
     width: 380px;
@@ -32,6 +58,8 @@ body {
     flex-direction: column;
     align-items: center;
     border-radius: 13px;
+
+
   }
   label{
     display: block;
