@@ -51,6 +51,17 @@ table {
   tr:nth-of-type(odd) { 
     background: #eee; 
   }
+  .lowerTable {
+    border-top:1px solid grey;
+    width:100%; 
+    height: 30px;
+    margin-bottom: 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
   th { 
     background: #363740; 
     color: white; 
@@ -92,10 +103,50 @@ table {
     font-size: 17px;
     padding: 1rem;
     position: relative;
-    left: 555px;
+    left: 955px;
+    display: flex;
+    align-items: center;
   }
   span:hover{
     cursor:pointer;
     font-size:23px;
+  }
+  .busca{
+    font-size: 17px;
+    padding: 1rem;
+    position: relative;
+    right: 855px;
+  } 
+  .micButton{
+    border: none;
+    background: transparent;
+    position: relative;
+    right:215px;
+    align-self: center;
+    justify-self: center;
+    top: 15px;
+
+
+
+  }
+
+  .micButton:hover{
+    cursor: pointer;
+  }
+  .micButton img{
+    height: 30px;
+    width: 30px;
+    
+  }
+  .setinha{
+    border: none;
+    background: transparent;
+  }
+  .setinha:hover{
+    cursor: pointer;
+  }
+
+  #invertido {
+    transform: scaleX(-1)
   }
 `

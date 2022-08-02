@@ -10,11 +10,14 @@ import {useNavigate} from 'react-router-dom';
 function Usuarios() {
     
     const [atualizar, setAtualizar] = useState(true)
+    const [name, setName] =useState("")
 
 
 
 
     const [users, setUsers] = useState([])
+    const [count, setCount] = useState([0])
+    const [pagination, setPagination] = useState(0)
     async function checkLoginStatus(){
     
         const jwToken = localStorage.getItem("jwToken");
@@ -37,15 +40,38 @@ function Usuarios() {
     
     useEffect(() => {
         getClientTable()
+        getClientTableCount()
 
         if(atualizar) setAtualizar(false);
 
-    },[atualizar])
+    },[atualizar, pagination])
+
+    useEffect(() => {
+        getClientTable()
+        getClientTableCount()
+
+    },[name])
 
     async function getClientTable(){
+        console.log(pagination)
         try {
-            const response = await api.get('/dbSelect');
+            const response = await api.get('/dbSelectWhere',            {
+                headers: {
+                name,
+                pagination
+            }
+        } );
             setUsers(response.data);
+        } catch (error) {
+            console.log(error);
+        }
+    }
+
+    async function getClientTableCount(){
+        try {
+            const response = await api.get('/dbCount');
+            setCount(response.data[0].NumberOfClients);
+            console.log(response);
         } catch (error) {
             console.log(error);
         }
@@ -77,7 +103,7 @@ function Usuarios() {
         
         <Navbar text = "Usuarios" />
 
-        <Table users = {users} setAtualizar = {setAtualizar}/>
+        <Table users = {users} setAtualizar = {setAtualizar} setNameReq = {setName} count ={count} setOffSet ={setPagination} pagination ={pagination}/>
     </div>
     );
 }

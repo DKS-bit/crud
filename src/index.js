@@ -19,7 +19,6 @@ root.render(
         <Route path='/Home' element={<Home />}></Route>
         <Route path='/Login' element={<Login />}></Route>
         <Route path='/Usuarios' element={<Usuarios />}></Route>
-        <Route path='/Test' element={<Test />}></Route>
 
 
       </Routes>
