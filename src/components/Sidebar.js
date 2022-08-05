@@ -11,7 +11,7 @@ function Sidebar(props) {
         </ImgText>
             <SidebarContent link="/Home" text="Home"/>
             <SidebarContent link="/Usuarios" text="Usuarios"/>
-            <SidebarContent link="/Configuracoes" text="Configuracoes"/>
+            <SidebarContent link="/Mensagens" text="Mensagens"/>
             <SidebarContent link="Creditos" text="Creditos"/>
             <SidebarContent link="Test" text="Teste"/>
 

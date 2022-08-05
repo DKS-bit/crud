@@ -96,7 +96,8 @@ function Table(props) {
                             <td><img src={user.image}></img></td>
                             <td>{user.name}</td>
                             <td>{handleDateFormat(user.dateOfBirth)}</td>
-                            <td><Active estado="inactive" texto="Inativo"></Active></td>
+                           
+                            <td><Active estado={user.status ==1 ? "active" : "inactive"} texto={user.status ==1 ? "Ativo" : "Inativo"}></Active></td>
                             <td><div className="dropdown">
                                 <img src="https://cdn4.iconfinder.com/data/icons/navigation-40/24/more-2-512.png" className="acoes" />
                                 <div className="dropdown-content">
@@ -120,9 +121,7 @@ function Table(props) {
             </table>
             <div className="lowerTable">
             <Pagination setOffSet = {props.setOffSet} count = {props.count}></Pagination>
-                {/* <b>Mostrando {props.pagination+1}-{props.pagination+3<props.count ? props.pagination+3 : props.count} de  {props.count} clientes</b>
-                <button  className="setinha" id ="invertido" onClick={(e) => props.setOffSet(prevPagination => prevPagination -3)} ><img src="https://cdn4.iconfinder.com/data/icons/navigation-40/24/chevron-right-512.png"/></button>
-                <button className="setinha" onClick={(e) => props.setOffSet(prevPagination => prevPagination +3)} ><img src="https://cdn4.iconfinder.com/data/icons/navigation-40/24/chevron-right-512.png"/></button> */}
+    
             </div>
         </Container >
     );

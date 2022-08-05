@@ -2,6 +2,7 @@ import Sidebar from "../components/Sidebar";
 import Navbar from "../components/Navbar";
 import Table from "../components/Table";
 import '../styles/usuarios.css';
+import Message from "../components/Message";
 import api from '../api/api.js'
 import { useEffect, useState } from "react";
 import {useNavigate} from 'react-router-dom';
@@ -104,6 +105,8 @@ function Usuarios() {
         <Navbar text = "Usuarios" />
 
         <Table users = {users} setAtualizar = {setAtualizar} setNameReq = {setName} count ={count} setOffSet ={setPagination} pagination ={pagination}/>
+
+        <Message users = {users}></Message>
     </div>
     );
 }
